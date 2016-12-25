@@ -55,7 +55,7 @@ public class AutoUpdateService extends Service {
                 String bingPic = response.body().string();
                 SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(AutoUpdateService.this).edit();
                 editor.putString("bing_pic",bingPic);
-                editor.apply();;
+                editor.apply();
             }
         });
     }
